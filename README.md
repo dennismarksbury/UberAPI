@@ -1,6 +1,6 @@
-# Uber.Direct.DaaS Client
+# Uber.Direct Client
 
-A minimal, strongly-typed **C# client library** for the [Uber Direct (DaaS) REST API](https://developer.uber.com/docs/deliveries/api-reference/daas).  
+A minimal, strongly-typed **C# client library** for the [Uber Direct REST API](https://developer.uber.com/docs/deliveries/api-reference/daas).  
 
 This library wraps the raw HTTP endpoints into clean async methods and request/response DTOs, making it easier to integrate **on-demand delivery** capabilities into .NET applications.
 
@@ -39,14 +39,14 @@ This project’s goal is to:
 
 ### 1. Install
 
-Clone this repository and add the `Uber.Direct.DaaS` project to your solution.
+Clone this repository and add the `Uber.Direct` project to your solution.
 
 ### 2. Usage
 
 ```csharp
 using System;
 using System.Net.Http;
-using Uber.Direct.DaaS;
+using Uber.Direct;
 
 var http = new HttpClient();
 var client = new UberDirectClient(http, "https://api.uber.com", "<CUSTOMER_ID>")
